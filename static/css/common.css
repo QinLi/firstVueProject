@@ -1,0 +1,68 @@
+/*@font-face {
+    font-family: 'INTER';
+    src: url('../font/INTERSTATECOND.eot');
+    src:
+    url('../font/INTERSTATECOND.eot?#font-spider') format('embedded-opentype'),
+    url('../font/INTERSTATECOND.woff') format('woff'),
+    url('../font/INTERSTATECOND.ttf') format('truetype'),
+    url('../font/INTERSTATECOND.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+@charset "utf-8";
+/* 初始化CSS */
+*{margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:bold;}
+fieldset, img{border:none; vertical-align:middle;}
+address, caption, cite, code, dfn, th, var{font-style:normal; font-weight:normal;}
+ul, ol{list-style:none;}
+li{list-style-type:none;}
+input{padding-top:0; padding-bottom:0; font-family: "SimSun",Arial,sans-serif;}
+select, input{vertical-align:middle;}
+select, input, textarea{ margin:0; font-size:12px;}
+input[type="text"], input[type="password"], textarea{outline-style:none;}
+textarea{font-family: "SimSun",Arial,sans-serif; resize:none;}
+body{font:12px "SimSun",Arial,sans-serif; color:#333; background:#fff;}
+a{text-decoration:none; color:inherit;}
+i, em{ font-style:normal;}
+.clearfix:after{ display:block; visibility:hidden; clear:both; height:0; content:"";}
+.clearfix{zoom:1;}
+.fl{ float:left;}
+.fr{ float:right;}
+.auto{ margin-left:auto; margin-right:auto;}
+
+/*html5*/
+article,aside,footer,header,section,footer,nav,figure,main{display:block}
+
+/*小号文字  scale以12号字体为基准 需写实际字号大小*/
+.font_adjust{-webkit-text-size-adjust:none;}
+.font_scale8{ -webkit-transform: scale(0.66);}
+.font_scale10{ -webkit-transform: scale(0.83);}
+.font_lc{-webkit-transform-origin:left center;}
+.font_rc{-webkit-transform-origin:right center;}
+.font_up{text-transform:uppercase;}
+
+/*文字截断*/
+.TXTovehid{display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+/*transition*/
+.tran200{-webkit-transition:all 0.2s linear; -moz-transition:all 0.2s linear; -ms-transition:all 0.2s linear; transition:all 0.2s linear;}
+.tran300{-webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear;}
+.tran400{-webkit-transition:all 0.4s linear; -moz-transition:all 0.4s linear; -ms-transition:all 0.4s linear; transition:all 0.4s linear;}
+.tran500{-webkit-transition:all 0.5s linear; -moz-transition:all 0.5s linear; -ms-transition:all 0.5s linear; transition:all 0.5s linear;}
+.tran1000{-webkit-transition:all 1s linear; -moz-transition:all 1s linear; -ms-transition:all 1s linear; transition:all 1s linear;}
+
+.scaleimg:hover{ -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);}
+.rotateY:hover{ -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
+.translateX:hover{-webkit-transform:translateX(-6px); -moz-transform: translateX(6px); -ms-transform:translateX(-6px); transform:translateX(-6px);}
+
+/*网页限定宽度*/
+.con_1000{ position:relative; margin:0 auto; width:1000px;}
+.con_1000:after{content:""; display:block; height:0; clear:both;}
+
+/*图片懒加载loading*/
+.scrollLoading{ background: url(../images/loading.gif) no-repeat center center #ddd; }
+
+.w1200{width: 1200px;margin: 0 auto;}
+body{font-family: "Microsoft Yahei";}
