@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="resetComponent">
     <div class="app-head">
       <div class="app-head-inner">
         <router-link :to="{path: '/'}">
@@ -52,6 +52,7 @@
 </template>
 
 <script>
+import { eventBus } from '../eventBus'
 import Dialog from './dialog'
 import LogForm from './logForm'
 import RegForm from './regForm'
@@ -86,6 +87,9 @@ export default {
     onSuccessLog: function (data) {
       this.username = data.username
       this.closeDialog('isShowLogDialog')
+    },
+    resetComponent () {
+      eventBus.$emit('reset-component')
     }
   }
 }

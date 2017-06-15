@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import _ from 'lodash'
 export default {
   props: {
     selections: {
@@ -33,7 +34,10 @@ export default {
         let i = this.nowIndexes.indexOf(index)
         this.nowIndexes.splice(i, 1)
       }
-      this.$emit('on-change', this.selections[this.nowIndexes])
+      let nowObjArray = _.map(this.nowIndexes, (idx) => {
+        return this.selections[idx]
+      })
+      this.$emit('on-change', nowObjArray)
     },
     checkActive (index) {
       return this.nowIndexes.indexOf(index) !== -1
